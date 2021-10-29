@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <td>:</td>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <div class="container" style="text-align: center;">
+        <h2 >Pengisian Data Mahasiswa</h2>
+    </div>
+</head>
+<body>
+    <div class="container">
+    <form table action="" method="post">
+        <div class="mb-3">
+        <label for="nim">NIM</label>
+        <input required class="form-control" type="text" name="nim" id="nim" placeholder="Masukan Nim anda">
+        </div>
+
+        <div class="mb-3">
+        <label for="nama">NAMA</label>
+        <input required class="form-control" type="text" name="nama" id="nama" placeholder="Masukan Nama anda ">
+        </div>
+        
+        <div class="mb-3">
+        <label for="jk">Jenis Kelamin :</label>
+        <input type="radio" name="jk" id="jk" value="L">Laki - Laki
+        <input type="radio" name="jk" id="jk" value="P">Perempuan
+        </div>
+        
+        <div class="mb-3">
+        <label for="jurusan">Jurusan</label>
+        <select class="form-control" name="jurusan" id="jurusan">
+            <option value="">Pilih Jurusan</option>
+            <option value="S1 ILKOM">S1 ILKOM</option>
+            <option value="S1 FARMASI"></option>
+            <option value="S1 HUKUM">S1 HUKUM </option>
+        </select>
+        </div>
+
+        <div class="mb-3 row">
+        <label for="catatan">Catatan</label>
+        <textarea name="catatan" id="catatan" cols="50" rows="3"></textarea>
+        </div>
+
+       <input type="submit" class="btn btn-primary" name="submit" value="Simpan Data">
+       <input type="reset" value="Batal" class="btn btn-warning">
+    </form>
+    </div>
+     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+     
+</body>
+</html>
